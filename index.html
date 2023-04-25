@@ -36,7 +36,46 @@
     
             
                     
-                        
+                Para ver imágenes y texto en PHP, puedes utilizar las funciones echo y print. Estas funciones permiten imprimir texto y variables en la página web generada por PHP.
+
+                Para imprimir texto en PHP, puedes utilizar la función echo. Por ejemplo:
+                
+                php
+                Copy code
+                <?php
+                echo "Hola Mundo!";
+                ?>
+                Este código imprimirá "Hola Mundo!" en la página web generada por PHP.
+                
+                Para mostrar imágenes en PHP, debes utilizar la etiqueta HTML img. La ruta de la imagen debe ser especificada en el atributo src. Por ejemplo:
+                
+                php
+                Copy code
+                <?php
+                echo "<img src='ruta_de_la_imagen'>";
+                ?>
+                Reemplaza ruta_de_la_imagen con la ruta de la imagen en tu servidor.
+                
+                También puedes utilizar variables en PHP para mostrar texto y/o imágenes dinámicamente. Por ejemplo:
+                
+                php
+                Copy code
+                <?php
+                $nombre = "Juan";
+                echo "Hola " . $nombre . "!";
+                echo "<img src='ruta_de_la_imagen'>";
+                ?>
+                Este código imprimirá "Hola Juan!" y mostrará la imagen especificada en ruta_de_la_imagen.
+                
+                Es importante tener en cuenta que si estás trabajando con texto que contiene comillas simples o dobles, debes escaparlas utilizando la barra invertida (\) para que PHP no las interprete incorrectamente. Por ejemplo:
+                
+                php
+                Copy code
+                <?php
+                $texto = "Este es un texto con 'comillas simples' y \"comillas dobles\".";
+                echo $texto;
+                ?>
+                Este código imprimirá "Este es un texto con 'comillas simples' y "comillas dobles"."                
               
     
 </html>
